@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Akhyar 22nd Birthday</title>
+    <!-- Library Kembang Api / Confetti -->
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
     <style>
         * {
             box-sizing: border-box;
@@ -50,7 +52,6 @@
         .function { color: #d2a8ff; }
         .number { color: #79c0ff; }
         
-        /* CSS KUE ULTAH */
         .cake-area {
             display: flex;
             flex-direction: column;
@@ -153,7 +154,6 @@
 happyBirthday();
         </div>
 
-        <!-- VISUAL KUE -->
         <div class="cake-area">
             <div class="candle-container">
                 <div class="candle"><div class="flame" id="flame1" onclick="blowOut()"></div></div>
@@ -173,8 +173,22 @@ happyBirthday();
 
     <script>
         function blowOut() {
+            // Matikan lilin
             document.querySelectorAll('.flame').forEach(f => f.classList.add('off'));
             document.getElementById('status-text').innerHTML = "🎉 Selamat! Lilin berhasil ditiup! Semoga semua keinginannya tercapai! 🚀🎉";
+            
+            // Tampilkan Kembang Api / Confetti dari Kiri & Kanan
+            confetti({
+                particleCount: 100,
+                spread: 70,
+                origin: { y: 0.6 }
+            });
+
+            // Efek tambahan ledakan bertahap
+            setTimeout(() => {
+                confetti({ particleCount: 50, angle: 60, spread: 55, origin: { x: 0 } });
+                confetti({ particleCount: 50, angle: 120, spread: 55, origin: { x: 1 } });
+            }, 300);
         }
     </script>
 </body>
