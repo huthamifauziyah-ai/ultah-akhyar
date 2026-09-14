@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Happy 22nd Birthday Akhyar! 🎂</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Canvas Tempat Kembang Api -->
+  <canvas id="fireworks"></canvas>
+
+  <div class="container">
+    <!-- Header VS Code Style -->
+    <div class="editor-header">
+      <div class="dots">
+        <span class="dot red"></span>
+        <span class="dot yellow"></span>
+        <span class="dot green"></span>
+      </div>
+      <div class="title">akhyar_22nd_birthday.js</div>
+    </div>
+
+    <!-- Area Tampilan Kode -->
+    <div class="editor-body">
+      <div class="line-numbers">
+        <span>1</span><span>2</span><span>3</span><span>4</span><span>5</span>
+        <span>6</span><span>7</span><span>8</span><span>9</span><span>10</span>
+      </div>
+      <div class="code">
+        <p><span class="kwd">const</span> <span class="var">person</span> = <span class="str">"Akhyar Fadilah Samad"</span>;</p>
+        <p><span class="kwd">let</span> <span class="var">age</span> = <span class="num">22</span>; <span class="cmt">// Level 22 Unlocked! 🎮</span></p>
+        <br>
+        <p><span class="kwd">function</span> <span class="func">happyBirthday</span>() {</p>
+        <p class="indent"><span class="func">console.log</span>(<span class="str">"Selamat ulang tahun ke-22, Akhyar! 🥳"</span>);</p>
+        <p class="indent"><span class="func">console.log</span>(<span class="str">"Semoga panjang umur, sehat, & sukses selalu! ✨"</span>);</p>
+        <p class="indent"><span class="func">console.log</span>(<span class="str">"Makin banyak uang nya :v, rezeki lancar & bebas bug! 🚀"</span>);</p>
+        <p><span class="kwd">}</span></p>
+        <br>
+        <p><span class="func">happyBirthday</span>();</p>
+      </div>
+    </div>
+
+    <!-- Area Kue Ulang Tahun -->
+    <div class="cake-section">
+      <div class="cake">
+        <div class="plate"></div>
+        <div class="layer layer-bottom"></div>
+        <div class="layer layer-middle"></div>
+        <div class="layer layer-top"></div>
+        <!-- Lilin -->
+        <div class="candle" id="candle" onclick="blowCandle()">
+          <div class="flame" id="flame"></div>
+        </div>
+      </div>
+      <p class="instruction" id="instruction">👇 Akhyar, klik api lilinnya buat tiup! 👇</p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
