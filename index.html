@@ -1,63 +1,104 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Happy 22nd Birthday Akhyar! 🎂</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Akhyar 22nd Birthday</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            background-color: #0d1117;
+            color: #c9d1d9;
+            font-family: 'Fira Code', 'Courier New', Courier, monospace;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+        }
+        .code-container {
+            background-color: #161b22;
+            border: 1px solid #30363d;
+            border-radius: 10px;
+            width: 100%;
+            max-width: 650px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+            overflow: hidden;
+        }
+        .window-header {
+            background-color: #21262d;
+            padding: 10px 15px;
+            display: flex;
+            align-items: center;
+            border-bottom: 1px solid #30363d;
+        }
+        .dots {
+            display: flex;
+            gap: 8px;
+        }
+        .dot {
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+        }
+        .red { background-color: #ff5f56; }
+        .yellow { background-color: #ffbd2e; }
+        .green { background-color: #27c93f; }
+        .filename {
+            margin-left: 15px;
+            font-size: 13px;
+            color: #8b949e;
+        }
+        .code-body {
+            padding: 20px;
+            line-height: 1.6;
+            font-size: 15px;
+            white-space: pre-wrap;
+        }
+        .keyword { color: #ff7b72; }
+        .string { color: #a5d6ff; }
+        .comment { color: #8b949e; font-style: italic; }
+        .function { color: #d2a8ff; }
+        .number { color: #79c0ff; }
+        .footer-text {
+            text-align: center;
+            margin-top: 15px;
+            font-size: 14px;
+            color: #e3b341;
+        }
+    </style>
 </head>
 <body>
 
-  <!-- Canvas Tempat Kembang Api -->
-  <canvas id="fireworks"></canvas>
-
-  <div class="container">
-    <!-- Header VS Code Style -->
-    <div class="editor-header">
-      <div class="dots">
-        <span class="dot red"></span>
-        <span class="dot yellow"></span>
-        <span class="dot green"></span>
-      </div>
-      <div class="title">akhyar_22nd_birthday.js</div>
-    </div>
-
-    <!-- Area Tampilan Kode -->
-    <div class="editor-body">
-      <div class="line-numbers">
-        <span>1</span><span>2</span><span>3</span><span>4</span><span>5</span>
-        <span>6</span><span>7</span><span>8</span><span>9</span><span>10</span>
-      </div>
-      <div class="code">
-        <p><span class="kwd">const</span> <span class="var">person</span> = <span class="str">"Akhyar Fadilah Samad"</span>;</p>
-        <p><span class="kwd">let</span> <span class="var">age</span> = <span class="num">22</span>; <span class="cmt">// Level 22 Unlocked! 🎮</span></p>
-        <br>
-        <p><span class="kwd">function</span> <span class="func">happyBirthday</span>() {</p>
-        <p class="indent"><span class="func">console.log</span>(<span class="str">"Selamat ulang tahun ke-22, Akhyar! 🥳"</span>);</p>
-        <p class="indent"><span class="func">console.log</span>(<span class="str">"Semoga panjang umur, sehat, & sukses selalu! ✨"</span>);</p>
-        <p class="indent"><span class="func">console.log</span>(<span class="str">"Makin banyak uang nya :v, rezeki lancar & bebas bug! 🚀"</span>);</p>
-        <p><span class="kwd">}</span></p>
-        <br>
-        <p><span class="func">happyBirthday</span>();</p>
-      </div>
-    </div>
-
-    <!-- Area Kue Ulang Tahun -->
-    <div class="cake-section">
-      <div class="cake">
-        <div class="plate"></div>
-        <div class="layer layer-bottom"></div>
-        <div class="layer layer-middle"></div>
-        <div class="layer layer-top"></div>
-        <!-- Lilin -->
-        <div class="candle" id="candle" onclick="blowCandle()">
-          <div class="flame" id="flame"></div>
+    <div class="code-container">
+        <div class="window-header">
+            <div class="dots">
+                <div class="dot red"></div>
+                <div class="dot yellow"></div>
+                <div class="dot green"></div>
+            </div>
+            <span class="filename">akhyar_22nd_birthday.js</span>
         </div>
-      </div>
-      <p class="instruction" id="instruction">👇 Akhyar, klik api lilinnya buat tiup! 👇</p>
-    </div>
-  </div>
+        <div class="code-body">
+<span class="keyword">const</span> person = <span class="string">"Akhyar Fadilah Samad"</span>;
+<span class="keyword">let</span> age = <span class="number">22</span>; <span class="comment">// Level 22 Unlocked! 🎮</span>
 
-  <script src="script.js"></script>
+<span class="keyword">function</span> <span class="function">happyBirthday</span>() {
+  console.log(<span class="string">"Selamat ulang tahun ke-22, Akhyar! 🥳"</span>);
+  console.log(<span class="string">"Semoga panjang umur, sehat, & sukses selalu! ✨"</span>);
+  console.log(<span class="string">"Makin banyak uang nya :v, rezeki lancar & bebas bug! 🚀"</span>);
+}
+
+happyBirthday();
+        </div>
+        <div class="footer-text">
+            👇 Akhyar, klik api lilinya buat tiup! 👇
+        </div>
+    </div>
+
 </body>
 </html>
